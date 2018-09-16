@@ -19,8 +19,8 @@ pm2 restart all //重启服务
     "name": "koa-server-3000", // 应用名称
     "script": "app.js", // 实际启动脚本
     "log_date_format": "YYYY-MM-DD HH:mm Z",//日志的log日志格式
-    "error_file" : "./logs/app-err.log",  // 错误日志路径
-    "out_file": "./log/layout-file-3000.stdout.log", // 普通日志路径
+    "error_file" : "./data/logs/app-err.log",  // 错误日志路径
+    "out_file": "./data/log/layout-file-3000.stdout.log", // 普通日志路径
     "max_memory_restart": "300M",//当内存超过300M时自动重启
     "watch": true, //监控文件变化，一旦变化，自动重启
     "instances": 0, //启用多少个实例，可用于负载均衡。如果-i 0或者-i max，则根据当前机器核数确定实例数目。
