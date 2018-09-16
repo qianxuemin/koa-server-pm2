@@ -1,0 +1,11 @@
+{
+    "name": "koa-server-3000",
+    "script": "app.js",
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "error_file": "./data/logs/app-err.log",
+    "out_file": "./data/log/layout-file-3000.stdout.log",
+    "max_memory_restart": "300M",
+    "watch": true,
+    "instances": 0,
+    "exec_mode": "cluster"
+}
