@@ -1,17 +1,17 @@
 {
-  "name": "koa-server-pm2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "koa": "^2.5.3",
-    "koa-bodyparser": "^4.2.1",
-    "koa-router": "^7.4.0"
-  }
+    "name": "koa-server-pm2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"我先不放测试脚本可以不\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "koa": "^2.5.3",
+        "koa-bodyparser": "^4.2.1",
+        "koa-router": "^7.4.0"
+    }
 }
