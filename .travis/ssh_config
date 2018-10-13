@@ -1,4 +1,4 @@
-User root
+User ubuntu
 Host qxmin.cn
 StrictHostKeyChecking no
 IdentityFile ~/.ssh/qxm_key
