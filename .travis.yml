@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- 7.10.0
+
+branches:
+  only:
+  - master
+
+after_script:
+- scp -o StrictHostKeyChecking=no app.js root@qxmin.cn:/code
