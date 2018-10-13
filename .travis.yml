@@ -4,8 +4,20 @@ node_js:
 branches:
   only:
   - master
-after_script:
-- scp -o StrictHostKeyChecking=no app.js root@qxmin.cn:/code
+
 before_install:
 - openssl aes-256-cbc -K $encrypted_ffc5f15538a8_key -iv $encrypted_ffc5f15538a8_iv
   -in qxm_key.enc -out ~/.ssh/qxm_key -d
+
+# 改变文件权限
+- chmod 600 ~/.ssh/qxm_key
+
+# 配置ssh
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/qxm_key
+- cp .travis/ssh_config ~/.ssh/config
+
+after_script:
+- scp -o StrictHostKeyChecking=no app.js root@qxmin.cn:/code
+
+
