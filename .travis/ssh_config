@@ -1,5 +1,6 @@
-User Ubuntu
+User ubuntu
 Host qxmin.cn
+HostName 47.94.217.105
 StrictHostKeyChecking no
 IdentityFile ~/.ssh/qxm_key
 
