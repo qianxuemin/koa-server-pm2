@@ -10,7 +10,7 @@ app.use(async(ctx, next) => {
     // 使用路由处理get请求
 router.get('/', async(ctx, next) => {
     ctx.response.body = `
-    <h1>index</h1>
+    <h1>index ci自动部署</h1>
     <form action="/sign" method="post">
         <p>Name: <input name="name"></p>
         <p>Password: <input name="password" type="password"></p>
