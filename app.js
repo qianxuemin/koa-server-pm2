@@ -32,8 +32,8 @@ router.post('/sign', async(ctx, next) => {
         <p><a href="/">Try again</a></p>`
     }
 })
-app.use('*', async(ctx, next) => {
-        ctx.response.body = `<h1>zhaobudao,!</h1>`
+router.get('*', async(ctx, next) => {
+        ctx.response.body = `<h1>这是404页面!</h1>`
         await next()
     })
     // 进行requestbody解析
