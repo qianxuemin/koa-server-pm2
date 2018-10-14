@@ -27,3 +27,13 @@ pm2 restart all //重启服务
     "exec_mode": "cluster" //应用程序启动模式，这里设置的是cluster_mode（集群），默认是fork
 }
 ```
+#travis ci
+1. gem install travis // 安装travis-ci的命令行工具
+2. 登录
+// 两种登录方式
+travis login --github-token 'token'
+// 检查一下是否登录成功：
+travis login --auto 
+travis whoami
+3. 对ssh私钥id_rsa进行加密：私钥放到travis服务器上,公钥放到远程主机
+travis encrypt-file ~/.ssh/id_rsa --add

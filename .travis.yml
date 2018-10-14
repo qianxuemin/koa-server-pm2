@@ -19,6 +19,9 @@ before_install:
 - cp .travis/ssh_config ~/.ssh/config
 
 after_script:
-- scp -o StrictHostKeyChecking=no app.js root@qxmin.cn:/root/code
+- scp -o StrictHostKeyChecking=no -r ./* root@qxmin.cn:/root/code/ci-code
+
+addons:
+  ssh_know_hosts: '47.94.217.105'
 
 
