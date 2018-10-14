@@ -32,8 +32,11 @@ router.post('/sign', async(ctx, next) => {
         <p><a href="/">Try again</a></p>`
     }
 })
-
-// 进行requestbody解析
+app.use('*', async(ctx, next) => {
+        ctx.response.body = `<h1>zhaobudao,!</h1>`
+        await next()
+    })
+    // 进行requestbody解析
 app.use(bodyParser())
     // 加入路由
 app.use(router.routes())

@@ -37,3 +37,5 @@ travis login --auto
 travis whoami
 3. 对ssh私钥id_rsa进行加密：私钥放到travis服务器上,公钥放到远程主机
 travis encrypt-file ~/.ssh/id_rsa --add
+
+# 单元测试 https://www.jianshu.com/p/aa53ac34e4c0
